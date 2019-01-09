@@ -12,6 +12,19 @@
       "scripts": ["background.js", "helpers.js"],
       "persistent": false
   },
+  "content_scripts":[
+    {
+      "matches":["https://*/*", "http://*/*"],
+      "js": ["content-script.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["jquery.js"],
+      "run_at": "document_idle"
+    }
+  ],
   "commands": {
     "command-name": {
       "suggested_key": {
@@ -22,6 +35,7 @@
         "description": "does something"
     }
   },
+  "options_page": "options.html",
   "permissions": [
     "tabs",
     "activeTab"

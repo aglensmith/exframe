@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Options</title>
+  <link rel="stylesheet" href="yarf.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+  <meta charset="utf-8" />
+  <script src="jquery.js"></script>
+</head>
+<body>
+  <header>
+    <div>
+      <span id="logo">[CET]</span>
+      <nav>
+        <a href="https://github.com/aglensmith/chrome-ext-template">Docs</a>
+        <a href="https://github.com/aglensmith/chrome-ext-template">Link2</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h3>Options</h3>
+      <hr>
+      <form>
+        <fieldset>
+          <!-- Execute Commands from addressbar -->  
+          <label for="checkboxField">
+            <input type="checkbox" id="option1" class="brocli-setting">
+            Option1
+          </label>
+
+          <!-- Default search url -->
+          <label for="textField">option2</label>
+          <input type="text" id="option2" class="brocli-setting" placeholder="textfield">
+        </fieldset>
+
+        <fieldset>
+          <!-- Command folder id -->
+          <label for="textField">option3</label>
+          <input type="text" id="option3" class= "brocli-setting" placeholder="textfield">
+
+          <!-- Save -->
+          <input type="submit" value="Save" id="saveButton">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <span><a href="https://github.com/aglensmith/chrome-ext-template">Github</a></span>
+  </footer>
+  <script src="options.js"></script>
+</body>
+</html>
