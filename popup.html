@@ -1,32 +1,9 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
   <head>
-    <title>Popup HTML</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
+    <title>frameIt</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <iframe src="https://bigcommerce-api-requests.docs.stoplight.io/catalog-api/summary/getcatalogsummary?__build_id=46909"></iframe>
     <script src="popup.js"></script>
   </head>
   <body>
@@ -34,4 +11,3 @@
     <img id="image-result" hidden>
   </body>
 </html>
-

@@ -39,6 +39,5 @@
   "permissions": [
     "tabs",
     "activeTab"
-  ],
-  "optional_permissions": ["activeTab"]
+  ]
 }
