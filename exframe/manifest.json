@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "extension-name",
-  "description": "extension-description",
+  "name": "ExFrame",
+  "description": "Turn any web page into a chrome extension",
   "version": "1.0",
   "omnibox": { "keyword" : "t" },
   "browser_action": {
